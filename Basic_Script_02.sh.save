@@ -1,0 +1,25 @@
+#!/bin/bash
+ # This is a single line comment
+echo "Sayem i love u"
+<< Note
+this is 
+multiline comment
+echeo "Multiline comment"
+Note
+#Array
+fruits=("apple" "Banana" "Mango" "Gum Gum")
+echo ${fruits[@]}
+
+Colors=()
+Colors[0]="Green"
+Colors[1]="white"
+
+echo ${Colors[@]}
+Colors+=("yellow")
+
+unset fruits[1]
+unset fruits[2]
+
+if [ $num .gt 80 ]
+then
+   
