@@ -1,0 +1,8 @@
+
+echo "Enter any two value:"
+
+read a
+read b
+c=$(($a-$b))
+
+echo "Final value is = $c"
