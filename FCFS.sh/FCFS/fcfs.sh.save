@@ -1,0 +1,6 @@
+echo "PID AT BT CT TAT WT"
+
+for ((i=0l i<n; i++))
+do
+  echo "${p[i]} ${arrival[i]} ${burst[i]} ${CT[i]} ${TAT[i]} ${WT[i]}"
+done
