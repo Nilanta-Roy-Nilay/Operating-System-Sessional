@@ -1,0 +1,89 @@
+============================================================
+KEYLOGGER TEST SUITE
+Linux_Keylogger_Project_Assignment
+============================================================
+
+============================================================
+  TEST 1: Privilege Check
+============================================================
+✓ Running as root (UID: 0)
+
+============================================================
+  TEST 2: evdev Module
+============================================================
+✓ evdev module loaded successfully
+
+============================================================
+  TEST 3: Input Devices
+============================================================
+✓ Found 7 input devices
+  - /dev/input/event0: Power Button
+  - /dev/input/event1: Sleep Button
+  - /dev/input/event2: AT Translated Set 2 keyboard
+✓ Keyboard: /dev/input/event2
+  - /dev/input/event3: SynPS/2 Synaptics TouchPad
+  - /dev/input/event4: Video Bus
+  - /dev/input/event5: Dell WMI hotkeys
+  - /dev/input/event6: PC Speaker
+
+============================================================
+  TEST 4: Logging
+============================================================
+✓ Log file created
+✓ Log content verified
+✓ Log file cleaned up
+
+============================================================
+  TEST 5: Keylogger Script
+============================================================
+✓ keylogger.py syntax valid
+
+============================================================
+  TEST 6: Email Configuration
+============================================================
+✓ Email recipient configured
+✓ Email sender configured
+✓ SMTP server configured
+✓ SMTP port configured
+⚠ SMTP password still set to default
+ℹ Please update SMTP_PASSWORD in keylogger.py
+
+============================================================
+  TEST 7: File Permissions
+============================================================
+✓ keylogger.py: readable
+✓ keylogger.py: executable
+✓ keylogger.sh: readable
+✓ keylogger.sh: executable
+
+============================================================
+  TEST 8: System Information
+============================================================
+ℹ Kernel: posix.uname_result(sysname='Linux', nodename='ubuntu', release='5.15.0-91-generic', version='#101-Ubuntu SMP Tue Nov 7 11:20:23 UTC 2023', machine='x86_64')
+ℹ Python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+✓ /proc/bus/input/devices exists
+✓ /dev/input exists
+
+============================================================
+  TEST RESULTS
+============================================================
+  [✓ PASS] Privilege Check
+  [✓ PASS] evdev Module
+  [✓ PASS] Input Devices
+  [✓ PASS] Logging
+  [✓ PASS] Script Syntax
+  [✓ PASS] Email Configuration
+  [✓ PASS] Permissions
+  [✓ PASS] System Info
+
+------------------------------------------------------------
+  Passed: 8/8 (100.0%)
+
+  🎉 All tests passed!
+
+  You can now run the keylogger:
+    sudo ./keylogger.sh start
+  Or directly:
+    sudo python3 keylogger.py
+
+============================================================
